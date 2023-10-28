@@ -31,5 +31,40 @@
 			</div>
 		</nav>-->
     </header>
+	<div class="contenedor">
+		<aside class="barra-lateral">
+			<h2>Pagina en construcción<h2>
+		</aside>
+		<main class="contenido-principal">
+			<section class="tarjetas-column">
+				<div class="tarjeta-column">
+					<div class="texto-tarjeta">
+						<h2>Este es un titulo</h2>
+						<h3 class="tarjeta-subtitulo">Autor: Eduardo Mulhia</h3>
+						<p>Este es un texto de prueba</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
 </body>
+<footer>
+    <div class="contenedor">
+		<div><a href="contacto.html">Contactanos</a></div>
+		<div>"El misterio de la vida no es un problema que hay que resolver, sino una realidad que hay que experimentar"	-Frank Herbert "Dune" (1965)</div>
+	</div>
+</footer>
+
+<!--ANIMACION INICIAL-->
+
+<div class="blurredBg"></div>
+<img class="logoAnimation" src="./img/logo.png" alt="logo">
+
+<script>
+	setTimeout(()=>{
+		document.querySelector('.logoAnimation').style.display='none';
+		document.querySelector('.blurredBg').style.display='none';
+	}, 2400);
+</script>
+
 </html>
