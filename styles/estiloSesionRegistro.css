@@ -149,7 +149,8 @@ main{
 
 .texto-tarjeta h3 {
 	font-family: palatino_linotype, georgia, sabon_next_lt;
-	text-align: left;
+	text-align: justify;
+	text-justify: distribute;
 	margin-bottom: 8px;
 	font-style: oblique;
 }
@@ -159,7 +160,6 @@ footer .contenedor{
 	justify-content: space-between;
 	width:100%;
 	background-color: #526538;
-	padding: 20px;
 	color: #fff;
 	position: relative;
 }

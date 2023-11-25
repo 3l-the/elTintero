@@ -149,7 +149,8 @@ main{
 
 .texto-tarjeta h3 {
 	font-family: palatino_linotype, georgia, sabon_next_lt;
-	text-align: left;
+	text-align: justify;
+	text-justify: distribute;
 	margin-bottom: 8px;
 	font-style: oblique;
 }
