@@ -39,10 +39,36 @@
                 <h3>555-555-5555</h3>
                 <h2>Dirección: </h2>
                 <h3>Calle Guadalupe Victoria 221, Las Jaras, 52166 Metepec, Méx.</h3>
+                <div id ="map", class="map">
+
+                </div>
             </section>
         </main>
     </div>
 </body>
+
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBMuXv2Lrnm911rAhTGJzH1og7udgw4Ok&callback=initMap">
+</script>
+ 
+<script>
+    const coord ={lat: 19.253653254331716, lng:-99.62637639274102}
+    const mapDiv = document.getElementById("map");
+    let map
+    let marker
+    function initMap() {
+        map = new google.maps.Map(mapDiv, {
+            center: coord,
+            zoom: 15,
+        });
+    
+    marker = new google.maps.Marker({
+        position: coord,
+        map: map
+    })
+}
+</script>
+
 <footer>
     <div class="contenedor">
         <div>"No conoceré el miedo.
@@ -51,7 +77,8 @@
             Afrontaré mi miedo.
             Permitiré que pase sobre mí y a través de mí.
             Y cuando haya pasado, giraré mi ojo interior para escrutar su camino.
-            Allí por donde mi miedo haya pasado ya no quedará nada, sólo estaré yo" -Frank Herbert, Dune (1965)</div>
+            Allí por donde mi miedo haya pasado ya no quedará nada, sólo estaré yo" 
+            -Frank Herbert, Dune (1965)</div>
     </div>
 </footer>
 </html>
